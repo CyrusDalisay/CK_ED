@@ -1,5 +1,9 @@
 package clases;
-
+/*
+@Autor: KenDalisay
+*/
+//Versión: 1.0
+//Clase CK_TipoDeCombustible
 public class CK_TipoDeCombustible {
 
     public enum TipoCombustible {
@@ -12,7 +16,7 @@ public class CK_TipoDeCombustible {
         TipoCombustible(double precioPorLitro) {
             this.precioPorLitro = precioPorLitro;
         }
-
+//Metodo GETTER
         public double getPrecioPorLitro() {
             return precioPorLitro;
         }

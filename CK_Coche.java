@@ -1,5 +1,12 @@
 package clases;
 
+ /*
+  @Autor: KenDalisay
+  */
+ //Versión: 1.0
+ //Clase CK_Coche
+ //Representa un coche con atributos como matricula, modelo, número de plazas, velocidad media, 
+ //tipo de combustible y consumo. Permite su creación y la consulta/modificación de sus datos.
 public class CK_Coche {
 	
 	private String Matricula;
@@ -9,6 +16,7 @@ public class CK_Coche {
 	private String TipoCombustible;
 	private double Consumo;
 
+//Constructor
 	public CK_Coche(String matricula, String modelo, int numeroPlazas, double velocidadMedia, String tipoCombustible,
 			double consumo) {
 		super();
@@ -19,6 +27,8 @@ public class CK_Coche {
 		TipoCombustible = tipoCombustible;
 		Consumo = consumo;
 	}
+
+	// Getters y Setters
 
 	public String getMatricula() {
 		return Matricula;
@@ -68,11 +78,13 @@ public class CK_Coche {
 		Consumo = consumo;
 	}
 
+//Metodo main
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
 
+//Metodo tostring
 	@Override
 	public String toString() {
 		return "CK_Coche [Matricula=" + Matricula + ", Modelo=" + Modelo + ", NumeroPlazas=" + NumeroPlazas
@@ -81,4 +93,3 @@ public class CK_Coche {
 	}
 
 }
-
